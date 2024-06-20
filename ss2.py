@@ -45,16 +45,16 @@ burn = True
 
 if light == True:
     if light == burn:
-        print("WAHHHHHh")
+        print("ouch")
     else:
-        print("yippie")
+        print("yay")
 else:
     print("putcha")    
 
 age = 16
 
 if age < 18:
-    print("PEDO!")
+    print("pedophile!")
 else:
     print("~~")
     
