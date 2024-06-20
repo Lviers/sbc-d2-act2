@@ -1,32 +1,37 @@
 from random import randint
-#from flask import Flask , render_template
 
-p1 = input("Humpyang makulong mahayang!: ")
+hayang = 0
+kulob = 1
 
-c1 = randint(1,2)
-c2 = randint(1,2)
-c3 = randint(1,2)
+ako = (input("Humpyang makulong mahayang!: "))
 
+c1 = randint(0, 1)
+c2 = randint(0, 1)
+c3 = randint(0, 1)  
 
-if p1 == 1 and c1 == 2 and c2 == 2 and c3 == 2:
-    print("You won!!")
-elif p1 == 2 and c1 ==1  and c2 == 2 and c3 == 2:
-    print("C1 won!")
-elif p1 == 2 and c1 == 2 and c2 == 1 and c3 == 2:
-    print("C2 Wins!")
-elif p1 == 2 and c1 == 2 and c2 == 2 and c3 == 1:
-    print("C3 Wins!")
-if p1 == 2 and c1 == 1 and c2 == 1 and c3 == 1:
-    print("You won!!")
-elif p1 == 1 and c1 ==2  and c2 == 1 and c3 == 1:
-    print("C1 Wins!")
-elif p1 == 1 and c1 ==1  and c2 == 2 and c3 == 1:
-    print("C2 Wins!")
-elif p1 == 1 and c1 == 1 and c2 == 1 and c3 == 2:
-    print("C3 Wins!")
+print(f"Ako: {'kulob' if ako == kulob else 'hayang'}")
+print(f"C1: {'kulob' if c1 == kulob else 'hayang'}")
+print(f"C2: {'kulob' if c2 == kulob else 'hayang'}")
+print(f"C3: {'kulob' if c3 == kulob else 'hayang'}")
+
+if (ako == hayang and c1 == kulob and c2 == kulob and c3 == kulob):
+    print("You win!")
+elif (ako == kulob and c1 == hayang and c2 == hayang and c3 == hayang):
+    print("You win!")
+elif (ako == kulob and c1 == hayang and c2 == kulob and c3 == kulob):
+    print("C1 wins!")
+elif (ako == hayang and c1 == kulob and c2 == hayang and c3 == hayang):
+    print("C1 wins!")
+elif (ako == kulob and c1 == kulob and c2 == hayang and c3 == kulob):
+    print("C2 wins!")
+elif (ako == hayang and c1 == hayang and c2 == kulob and c3 == hayang):
+    print("C2 wins")
+elif (ako == kulob and c1 == kulob and c2 == kulob and c3 == hayang):
+    print("C3 wins!")
+elif (ako == hayang and c1 == hayang and c2 == hayang and c3 == kulob):
+    print("C3 wins!!")
 else:
     print("Draw!")
-
 
 
 
